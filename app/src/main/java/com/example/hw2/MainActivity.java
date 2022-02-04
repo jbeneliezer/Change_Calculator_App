@@ -86,5 +86,4 @@ public class MainActivity extends AppCompatActivity {
             keyView.setText(String.format("%s %d", unit, element.getValue()));
         }
     }
-
 }
