@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity {
         clearPrice();
     }
 
-    protected void clearPrice() {
+    private void clearPrice() {
         price = 0;
         setChange();
         displayPrice();
         displayChange();
     }
 
-    protected void setChange() {
+    private void setChange() {
         int value = price;
         change.put("twenties", value/ 2000);
         value %= 2000;
@@ -71,14 +71,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @SuppressLint("DefaultLocale")
-    protected void displayPrice() {
+    private void displayPrice() {
         TextView tv = findViewById(R.id.price);
         double realValue = price/ 100.0;
         tv.setText(String.format("Price: %.02f", realValue));
     }
 
     @SuppressLint("DefaultLocale")
-    protected void displayChange() {
+    private void displayChange() {
         for (HashMap.Entry<String, Integer> element: change.entrySet()) {
             int id = getResources().getIdentifier(element.getKey(), "id", getPackageName());
             TextView keyView = findViewById(id);
