@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         clearPrice();
     }
 
-    public int price; // price in cents
-    public static final int MAX_PRICE = 100000000; // $1 million
-    public HashMap<String, Integer> change = new HashMap<String, Integer>()
+    static final int MAX_PRICE = 100000000; // $1 million
+    int price; // price in cents
+    HashMap<String, Integer> change = new HashMap<String, Integer>()
     {{
         put("twenties", 0);
         put("tens", 0);
@@ -52,22 +52,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void setChange() {
-        double value = price;
-        change.put("twenties", (int) Math.floor(value) / 2000);
+        int value = price;
+        change.put("twenties", value/ 2000);
         value %= 2000;
-        change.put("tens", (int) Math.floor(value) / 1000);
+        change.put("tens", value/ 1000);
         value %= 1000;
-        change.put("fives", (int) Math.floor(value) / 500);
+        change.put("fives", value/ 500);
         value %= 500;
-        change.put("ones", (int) Math.floor(value) / 100);
+        change.put("ones", value/ 100);
         value %= 100;
-        change.put("quarters", (int) Math.floor(value) / 25);
+        change.put("quarters", value/ 25);
         value %= 25;
-        change.put("dimes", (int) Math.floor(value) / 10);
+        change.put("dimes", value/ 10);
         value %= 10;
-        change.put("nickels", (int) Math.floor(value) / 5);
+        change.put("nickels", value/ 5);
         value %= 5;
-        change.put("pennies", (int) Math.floor(value));
+        change.put("pennies", value);
     }
 
     @SuppressLint("DefaultLocale")
