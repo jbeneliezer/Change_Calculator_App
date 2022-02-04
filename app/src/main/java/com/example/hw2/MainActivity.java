@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
             int id = getResources().getIdentifier(element.getKey(), "id", getPackageName());
             TextView keyView = findViewById(id);
             String unit = String.valueOf(keyView.getText()).replaceFirst("\\s*(\\w+).*", "$1");
+            System.out.println(unit);
             keyView.setText(String.format("%s %d", unit, element.getValue()));
         }
     }

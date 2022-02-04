@@ -12,12 +12,12 @@
     <string name="_9">9</string>
     <string name="_0">0</string>
     <string name="clear">CLEAR</string>
-    <string name="twenties">$20:\ </string>
-    <string name="tens">$10:\ </string>
-    <string name="fives">$5:\ </string>
-    <string name="ones">$1:\ </string>
-    <string name="quarters">25¢:\ </string>
-    <string name="dimes">10¢:\ </string>
-    <string name="nickels">5¢:\ </string>
-    <string name="pennies">1¢:\ </string>
+    <string name="twenties">$20:</string>
+    <string name="tens">$10:</string>
+    <string name="fives">$5:</string>
+    <string name="ones">$1:</string>
+    <string name="quarters">25¢:</string>
+    <string name="dimes">10¢:</string>
+    <string name="nickels">5¢:</string>
+    <string name="pennies">1¢:</string>
 </resources>
