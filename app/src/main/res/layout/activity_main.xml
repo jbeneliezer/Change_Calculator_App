@@ -10,11 +10,9 @@
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="188dp"
         android:text="@string/price"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@id/vert_guide1"
+        app:layout_constraintTop_toTopOf="@id/horiz_guide1" />
 
     <Button
         android:id="@+id/b1"
@@ -58,12 +56,10 @@
         android:id="@+id/b5"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="364dp"
         android:onClick="setPrice"
         android:text="@string/_5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@id/vert_guide0"
+        app:layout_constraintTop_toTopOf="@id/horiz_guide0" />
 
     <Button
         android:id="@+id/b6"
@@ -126,11 +122,10 @@
         android:id="@+id/twenties"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginBottom="50dp"
         android:text="@string/twenties"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@id/horiz_guide0"
+        app:layout_constraintEnd_toEndOf="@id/vert_guide1" />
 
     <TextView
         android:id="@+id/tens"
@@ -194,5 +189,33 @@
         android:text="@string/pennies"
         app:layout_constraintEnd_toEndOf="@+id/nickels"
         app:layout_constraintTop_toBottomOf="@+id/nickels" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vert_guide0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horiz_guide0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vert_guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horiz_guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
 
 </android.support.constraint.ConstraintLayout>
