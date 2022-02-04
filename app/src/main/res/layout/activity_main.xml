@@ -10,96 +10,45 @@
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="165dp"
         android:layout_marginTop="188dp"
         android:text="@string/price"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/b2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="5dp"
-        android:onClick="setPrice"
-        android:text="@string/_2"
-        app:layout_constraintBottom_toTopOf="@+id/b5"
-        app:layout_constraintStart_toStartOf="@+id/b5" />
-
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="125dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="5dp"
-        android:onClick="clearPrice"
-        android:text="@string/clear"
-        app:layout_constraintStart_toStartOf="@id/b8"
-        app:layout_constraintTop_toBottomOf="@id/b8"/>
-
-    <Button
-        android:id="@+id/b7"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:onClick="setPrice"
-        android:text="@string/_7"
-        app:layout_constraintBottom_toBottomOf="@+id/b8"
-        app:layout_constraintStart_toStartOf="@+id/b4" />
-
-    <Button
-        android:id="@+id/b3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="5dp"
-        android:onClick="setPrice"
-        android:text="@string/_3"
-        app:layout_constraintEnd_toEndOf="@id/b6"
-        app:layout_constraintTop_toTopOf="@id/b2" />
-
-    <Button
-        android:id="@+id/b9"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:onClick="setPrice"
-        android:text="@string/_9"
-        app:layout_constraintBottom_toBottomOf="@id/b8"
-        app:layout_constraintEnd_toEndOf="@+id/b6" />
-
-    <Button
         android:id="@+id/b1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:onClick="setPrice"
         android:text="@string/_1"
         app:layout_constraintStart_toStartOf="@id/b4"
         app:layout_constraintTop_toTopOf="@+id/b2" />
 
     <Button
-        android:id="@+id/b8"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="5dp"
+        android:id="@+id/b2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="5dp"
         android:onClick="setPrice"
-        android:text="@string/_8"
-        app:layout_constraintStart_toStartOf="@+id/b5"
-        app:layout_constraintTop_toBottomOf="@+id/b5" />
+        android:text="@string/_2"
+        app:layout_constraintBottom_toTopOf="@+id/b5"
+        app:layout_constraintStart_toStartOf="@+id/b5" />
+
 
     <Button
-        android:id="@+id/b6"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="5dp"
+        android:id="@+id/b3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:onClick="setPrice"
-        android:text="@string/_6"
-        app:layout_constraintStart_toEndOf="@+id/b5"
-        app:layout_constraintTop_toTopOf="@id/b5" />
+        android:text="@string/_3"
+        app:layout_constraintEnd_toEndOf="@id/b6"
+        app:layout_constraintTop_toTopOf="@id/b2" />
 
     <Button
         android:id="@+id/b4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:layout_marginEnd="5dp"
         android:onClick="setPrice"
         android:text="@string/_4"
@@ -108,23 +57,71 @@
 
     <Button
         android:id="@+id/b5"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="360dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="364dp"
         android:onClick="setPrice"
         android:text="@string/_5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/b6"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:onClick="setPrice"
+        android:text="@string/_6"
+        app:layout_constraintStart_toEndOf="@+id/b5"
+        app:layout_constraintTop_toTopOf="@id/b5" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:onClick="setPrice"
+        android:text="@string/_7"
+        app:layout_constraintBottom_toBottomOf="@+id/b8"
+        app:layout_constraintStart_toStartOf="@+id/b4" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        android:onClick="setPrice"
+        android:text="@string/_8"
+        app:layout_constraintStart_toStartOf="@+id/b5"
+        app:layout_constraintTop_toBottomOf="@+id/b5" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:onClick="setPrice"
+        android:text="@string/_9"
+        app:layout_constraintBottom_toBottomOf="@id/b8"
+        app:layout_constraintEnd_toEndOf="@+id/b6" />
+
+    <Button
         android:id="@+id/b0"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:onClick="setPrice"
         android:text="@string/_0"
         app:layout_constraintBottom_toBottomOf="@+id/clear"
         app:layout_constraintStart_toStartOf="@+id/b7" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        android:onClick="clearPrice"
+        android:text="@string/clear"
+        app:layout_constraintStart_toStartOf="@id/b8"
+        app:layout_constraintTop_toBottomOf="@id/b8"/>
 
     <TextView
         android:id="@+id/twenties"
@@ -204,6 +201,6 @@
         android:text="@string/pennies"
         app:layout_constraintEnd_toEndOf="@+id/nickels"
         app:layout_constraintTop_toBottomOf="@+id/nickels"
-        tools:layout_editor_absoluteY="603dp" />
+        tools:layout_editor_absoluteY="653dp" />
 
 </android.support.constraint.ConstraintLayout>
