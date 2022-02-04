@@ -11,13 +11,6 @@ import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        clearPrice();
-    }
-
     static final int MAX_PRICE = 100000000; // $1 million
     int price; // price in cents
     HashMap<String, Integer> change = new HashMap<String, Integer>()
@@ -31,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
         put("nickels", 0);
         put("pennies", 0);
     }};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        clearPrice();
+    }
 
     public void setPrice(View view) {
         Button b = findViewById(view.getId());
