@@ -35,7 +35,6 @@
         app:layout_constraintBottom_toTopOf="@+id/b5"
         app:layout_constraintStart_toStartOf="@+id/b5" />
 
-
     <Button
         android:id="@+id/b3"
         android:layout_width="65dp"
