@@ -120,7 +120,7 @@
         android:onClick="clearPrice"
         android:text="@string/clear"
         app:layout_constraintStart_toStartOf="@id/b8"
-        app:layout_constraintTop_toBottomOf="@id/b8"/>
+        app:layout_constraintTop_toBottomOf="@id/b8" />
 
     <TextView
         android:id="@+id/twenties"
@@ -139,8 +139,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/tens"
         app:layout_constraintEnd_toEndOf="@+id/twenties"
-        app:layout_constraintTop_toBottomOf="@+id/twenties"
-        tools:layout_editor_absoluteY="343dp" />
+        app:layout_constraintTop_toBottomOf="@+id/twenties" />
 
     <TextView
         android:id="@+id/fives"
@@ -149,8 +148,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/fives"
         app:layout_constraintEnd_toEndOf="@+id/tens"
-        app:layout_constraintTop_toBottomOf="@+id/tens"
-        tools:layout_editor_absoluteY="385dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tens" />
 
     <TextView
         android:id="@+id/ones"
@@ -159,8 +157,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/ones"
         app:layout_constraintEnd_toEndOf="@+id/fives"
-        app:layout_constraintTop_toBottomOf="@+id/fives"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintTop_toBottomOf="@+id/fives" />
 
     <TextView
         android:id="@+id/quarters"
@@ -169,8 +166,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/quarters"
         app:layout_constraintEnd_toEndOf="@+id/ones"
-        app:layout_constraintTop_toBottomOf="@+id/ones"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ones" />
 
     <TextView
         android:id="@+id/dimes"
@@ -179,8 +175,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/dimes"
         app:layout_constraintEnd_toEndOf="@+id/quarters"
-        app:layout_constraintTop_toBottomOf="@+id/quarters"
-        tools:layout_editor_absoluteY="516dp" />
+        app:layout_constraintTop_toBottomOf="@+id/quarters" />
 
     <TextView
         android:id="@+id/nickels"
@@ -189,8 +184,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/nickels"
         app:layout_constraintEnd_toEndOf="@+id/dimes"
-        app:layout_constraintTop_toBottomOf="@+id/dimes"
-        tools:layout_editor_absoluteY="557dp" />
+        app:layout_constraintTop_toBottomOf="@+id/dimes" />
 
     <TextView
         android:id="@+id/pennies"
@@ -199,7 +193,6 @@
         android:layout_marginTop="20dp"
         android:text="@string/pennies"
         app:layout_constraintEnd_toEndOf="@+id/nickels"
-        app:layout_constraintTop_toBottomOf="@+id/nickels"
-        tools:layout_editor_absoluteY="653dp" />
+        app:layout_constraintTop_toBottomOf="@+id/nickels" />
 
 </android.support.constraint.ConstraintLayout>
